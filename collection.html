@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collections - Gadgets</title>
+  <link rel="stylesheet" href="stylesc.css">
+  <script src="c.js"></script>
+</head>
+
+<body>
+  <!-- Header -->
+ 
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#">ShopIt</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="collection.html">Collections</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Collections Section -->
+  <section class="collections">
+    <div class="container">
+      <h1>Gadget Collections</h1>
+      <div class="grid">
+        <!-- Product Item 1 -->
+        <div class="product-card" onclick="showProductDetails('product1')">
+          <img src="sp.jpg" alt="Gadget 1">
+          <h3>Smartphone</h3>
+          <p>$299.99</p>
+        </div>
+        <!-- Product Item 2 -->
+        <div class="product-card" onclick="showProductDetails('product2')">
+          <img src="lp1.avif" alt="Gadget 2">
+          <h3>Laptop</h3>
+          <p>$799.99</p>
+        </div>
+        <!-- Product Item 3 -->
+        <div class="product-card" onclick="showProductDetails('product3')">
+          <img src="wh.jfif" alt="Gadget 3">
+          <h3>Headphones</h3>
+          <p>$149.99</p>
+        </div>
+        <!-- Product Item 4 -->
+        <div class="product-card" onclick="showProductDetails('product4')">
+          <img src="w.jpg" alt="Gadget 4">
+          <h3>Smartwatch</h3>
+          <p>$199.99</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Modal (Popup) -->
+  <div id="product-modal" class="product-modal">
+    <div class="modal-content">
+      <!-- Close Button -->
+      <button class="close-btn" onclick="closeModal()">&#10005;</button>
+      <h2 id="modal-product-name">Product Name</h2>
+      <img id="modal-product-img" src="" alt="Product Image">
+      <p id="modal-product-description">Product Description</p>
+      <p id="modal-product-price">$0.00</p>
+    </div>
+  </div>
+<br><br><br><br><br><br><br>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2024 ShopIt. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Sitemap</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
